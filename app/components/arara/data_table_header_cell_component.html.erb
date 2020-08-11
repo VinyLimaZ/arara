@@ -1,3 +1,19 @@
+<style>
+div.mdc-data-table__header-cell-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mdc-data-table__content
+  th.mdc-data-table--sortable.mdc-data-table--sort-asc:after {
+  content: "arrow_downward";
+}
+.mdc-data-table__content
+  th.mdc-data-table--sortable.mdc-data-table--sort-desc:after {
+  content: "arrow_upward";
+</style>
+
 <%= content_tag(html_tag, html_options) do %>
   <%= content %>
 <% end %>
